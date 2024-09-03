@@ -120,10 +120,10 @@ blockquote {
   @include list-unstyled();
   li {
     position: relative;
-    padding-left: 1.25rem;
+    padding-right: 1.25rem;
   }
   &.bullet-bg li {
-    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
   @each $color,
   $value in $bullet-soft {
@@ -159,7 +159,7 @@ blockquote {
   i {
     position: absolute;
     top: -0.2rem;
-    left: 0;
+    right: 0;
     @include font-size(1rem);
   }
   &.bullet-bg i {
