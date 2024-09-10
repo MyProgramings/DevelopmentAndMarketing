@@ -38,11 +38,15 @@ select {
     } 
   }
 }
+.form-floating > label {
+  right: 0;
+  left: auto;
+}
 .search-form {
   position: relative;
   .form-control {
     margin: 0;
-    padding-right: 2.25rem !important;
+    padding-left: 2.25rem !important;
   }
   &:before {
     content: $icon-search;
@@ -51,7 +55,7 @@ select {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    right: 0.75rem;
+    left: 0.75rem;
     @include font-size(0.9rem);
     color: $input-placeholder-color;
     z-index: 1;
