@@ -22,9 +22,21 @@
       margin-right: 0.5rem;
       .page-link {
         border: 0;
-        border-radius: $border-radius !important;
+        // border-radius: $border-radius !important;
         box-shadow: $box-shadow-lg;
       }
     }
   }
+}
+.page-item:first-child .page-link {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: var(--bs-pagination-border-radius);
+  border-bottom-right-radius: var(--bs-pagination-border-radius);
+}
+.page-item:last-child .page-link {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-top-left-radius: var(--bs-pagination-border-radius);
+  border-bottom-left-radius: var(--bs-pagination-border-radius);
 }

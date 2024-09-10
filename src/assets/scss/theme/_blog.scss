@@ -82,7 +82,7 @@ footer [class*="col-"] .widget + .widget {
   ul.children {
     margin: 2rem 0 0 0;
     overflow: inherit;
-    padding: 0 0 0 3.5rem;
+    padding: 0 3.5rem 0 0;
     list-style: none;
     li.comment {
       position: relative;
@@ -92,7 +92,7 @@ footer [class*="col-"] .widget + .widget {
         content: $icon-line;
         @include font-size(2rem);
         position: absolute;
-        left: -2.5rem;
+        right: -2.5rem;
         top: -1.25rem;
         color: rgba($border-light, 0.25);
       }
@@ -118,7 +118,7 @@ footer [class*="col-"] .widget + .widget {
   }
 }
 .user-avatar {
-  margin-right: 1rem;
+  margin-left: 1rem;
   width: 3rem;
   height: 3rem;
   position: relative;

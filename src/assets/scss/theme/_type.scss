@@ -2,8 +2,8 @@
 //	BLOCKQUOTE
 //----------------------------------------------------------//
 blockquote {
-  border-left: 0.15rem solid var(--#{$prefix}primary);
-  padding-left: 1rem;
+  border-right: 0.15rem solid var(--#{$prefix}primary);
+  padding-right: 1rem;
   @include font-size($blockquote-font-size);
   line-height: $line-height-base;
   font-weight: $blockquote-font-weight;
@@ -96,13 +96,13 @@ blockquote {
   @include list-unstyled();
   li {
     position: relative;
-    padding-left: 1rem;
+    padding-right: 1rem;
   }
   > li:before {
     font-family: sans-serif;
     position: absolute;
     top: -0.15rem;
-    left: 0;
+    right: 0;
     @include font-size(1rem);
     content: $icon-dot;
   }
