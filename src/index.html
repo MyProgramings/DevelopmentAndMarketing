@@ -4,6 +4,12 @@
   @@include('_head.html')
   <link rel="stylesheet" href="@@webRoot/assets/css/colors/grape.css">
   <link rel="preload" href="@@webRoot/assets/css/fonts/space.css" as="style" onload="this.rel='stylesheet'">
+  <style>
+    .form-floating > label {
+      left: auto;
+      right: 0;
+    }
+  </style>
 </head>
 <body>
   <div class="content-wrapper">
@@ -562,7 +568,7 @@
         <div class="row">
           <div class="col-lg-10 col-xl-9 col-xxl-8 mx-auto text-center">
             <h2 class="fs-20 text-uppercase text-white mb-3">انضم إلى مجتمعنا</h2>
-            <h3 class="display-3 text-white mb-6">نحن <span class="underline-2 underline-gradient-6"><em>نحظى بثقة</em></span> أكثر من 5000 عميل. انضم إليهم الآن وطوّر أعمالك.</h3>
+            <h3 class="display-3 text-white mb-6">في <span class="underline-2 underline-gradient-6"><em>ماركتينج آيكون</em></span> نفخر بكوننا الشريك الذي يمكنك الاعتماد عليه لتحقيق نجاحك. دعنا نبدأ رحلة النجاح معًا!</h3>
             <a href="#" class="btn btn-white">انظم الينا</a>
           </div>
           <!-- /column -->
@@ -611,6 +617,90 @@
           <!-- /column -->
         </div>
         <!-- /.row -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /section -->
+    <section class="wrapper bg-light">
+      <div class="container py-5 py-md-8">
+        <div class="card bg-soft-primary">
+          <div class="card-body py-12">
+            <div class="row gx-md-8 gx-xl-12 gy-10">
+              <div class="col-lg-6">	
+                <img src="./assets/img/icons/lineal/email.svg" class="svg-inject icon-svg icon-svg-sm mb-4" alt="" />
+                <h2 class="fs-50 display-4 mb-3 ps-lg-10">إذا أعجبك ما تراه، دعنا نعمل معًا.</h2>
+                <p class="fs-25 lead ps-lg-12 mb-0">نحن هنا لمساعدتك في كل خطوة على الطريق. إذا كان لديك أي أسئلة أو تحتاج إلى استشارة، لا تتردد في الاتصال بنا. فريقنا مستعد دائمًا لتقديم الدعم الذي تحتاجه.</p>
+              </div>
+              <!-- /column -->
+              <div class="col-lg-6">
+                <form class="contact-form needs-validation" method="post" action="./assets/php/contact.php" novalidate>
+                  <div class="messages"></div>
+                  <div class="row gx-4">
+                    <div class="col-md-6">
+                      <div class="form-floating mb-4">
+                        <input id="frm_name" type="text" name="name" class="form-control border-0" placeholder="Jane" required="required" data-error="First Name is required.">
+                        <label for="frm_name">الاسم *</label>
+                        <div class="invalid-feedback">
+                          Please enter your name.
+                        </div>
+                      </div>
+                    </div>
+                    <!-- /column -->
+                    <div class="col-md-6">
+                      <div class="form-floating mb-4">
+                        <input id="frm_phone" type="text" name="phone" class="form-control border-0" placeholder="jane.doe@example.com" required="required" data-error="Valid phone is required.">
+                        <label for="frm_phone">الهاتف *</label>
+                        <div class="valid-feedback">
+                          Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                          Please provide a valid phone address.
+                        </div>
+                      </div>
+                    </div>
+                    <!-- /column -->
+                    <div class="col-md-12">
+                      <div class="form-floating mb-4">
+                        <input id="frm_email" type="email" name="email" class="form-control border-0" placeholder="jane.doe@example.com" required="required" data-error="Valid email is required.">
+                        <label for="frm_email">البريد الالكتروني *</label>
+                        <div class="valid-feedback">
+                          Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                          Please provide a valid email address.
+                        </div>
+                      </div>
+                    </div>
+                    <!-- /column -->
+                    <div class="col-12">
+                      <div class="form-floating mb-4">
+                        <textarea id="frm_message" name="message" class="form-control border-0" placeholder="Your message" style="height: 150px" required></textarea>
+                        <label for="frm_message">الرسالة *</label>
+                        <div class="valid-feedback">
+                          Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                          Please enter your messsage.
+                        </div>
+                      </div>
+                    </div>
+                    <!-- /column -->
+                    <div class="col-12">
+                      <input type="submit" class="btn btn-outline-primary rounded-pill btn-send mb-3" value="أرسل رسالة">
+                    </div>
+                    <!-- /column -->
+                  </div>
+                  <!-- /.row -->
+                </form>
+                <!-- /form -->
+              </div>
+              <!-- /column -->
+            </div>
+            <!-- /.row -->
+          </div>
+          <!--/.card-body -->
+        </div>
+        <!--/.card -->
       </div>
       <!-- /.container -->
     </section>
