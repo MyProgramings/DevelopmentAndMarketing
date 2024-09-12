@@ -55,7 +55,7 @@ blockquote {
 .blockquote-details {
   display: flex;
   align-items: center;
-  text-align: left;
+  text-align: right;
   p {
     @include font-size($font-size-base);
   }
