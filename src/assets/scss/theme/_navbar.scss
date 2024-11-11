@@ -94,7 +94,7 @@ header {
   transform: translateY(0%);
   &:not(.navbar-dark) {
     box-shadow: $box-shadow-md;
-    background: rgba(var(--#{$prefix}white-rgb), 0.97);
+    background: $dark_blue;
   }
 }
 //----------------------------------------------------------//
