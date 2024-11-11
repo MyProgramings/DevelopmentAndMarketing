@@ -59,6 +59,8 @@ $gray-600: #60697b !default;
 $gray-700: #2f353a !default;
 $gray-800: #21262c !default;
 $gray-900: #1e2228 !default;
+$dark_blue: #030113 !default;
+$light_blue: #fff !default;
 $error: #de4747 !default;
 $light: $gray-100 !default;
 $gray: $gray-200 !default;
@@ -114,6 +116,7 @@ $main-color: $primary !default;
 $component-active-color: $white !default;
 $component-active-bg: $main-color !default;
 $main-dark: $navy !default;
+$main-light: $gray-200 !default;
 $lineal-stroke: $main-dark !default;
 $focus-border: tint-color($component-active-bg, 50%) !default;
 $color-contrast-dark: $main-dark !default;
@@ -398,8 +401,8 @@ $ash-border-soft:       tint-color($ash, 70%) !default;
 //----------------------------------------------------------//
 //	BODY
 //----------------------------------------------------------//
-$body-bg: $gray-100 !default;
-$body-color: $gray-600 !default;
+$body-bg: $dark_blue !default;
+$body-color: $gray-200 !default;
 //----------------------------------------------------------//
 //	LINKS
 //----------------------------------------------------------//
@@ -484,7 +487,7 @@ $h4-line-height: 1.45 !default;
 $h5-line-height: 1.5 !default;
 $h6-line-height: 1.55 !default;
 $headings-font-weight: 700 !default;
-$headings-color: $main-dark !default;
+$headings-color: $light_blue !default;
 $display-font-sizes: (1: 2.4rem,
   2: 2.2rem,
   3: 2rem,
